@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Learning Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Course Learning</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Course Structure -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-section1-list" data-toggle="list" href="#list-section1" role="tab" aria-controls="section1">Section 1</a>
+          <a class="list-group-item list-group-item-action" id="list-section2-list" data-toggle="list" href="#list-section2" role="tab" aria-controls="section2">Section 2</a>
+          <a class="list-group-item list-group-item-action" id="list-section3-list" data-toggle="list" href="#list-section3" role="tab" aria-controls="section3">Section 3</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-section1" role="tabpanel" aria-labelledby="list-section1-list">
+            <h3>Section 1: Introduction</h3>
+            <p>Web Developement</p>
+          </div>
+          <div class="tab-pane fade" id="list-section2" role="tabpanel" aria-labelledby="list-section2-list">
+            <h3>Section 2: Intermediate</h3>
+            <p> Basic Javascript</p>
+          </div>
+          <div class="tab-pane fade" id="list-section3" role="tabpanel" aria-labelledby="list-section3-list">
+            <h3>Section 3: Advanced</h3>
+            <p>Advance Javascript</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Player Section -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Course Player</h3>
+        <!-- Embedded Player (Example) -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=pu2Yt3ijvwpTELqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Language Selection -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Language Selection</h3>
+        <select class="form-control" id="language-select">
+          <option value="english">English</option>
+          <option value="marathi">Hindi</option>
+          <option value="marathi">Marathi</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Progress Tracking -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Progress Tracking</h3>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
